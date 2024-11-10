@@ -49,3 +49,9 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
+
+.rbc-event {
+  background-color: #CAFFD0 !important;
+  color: gray !important;
+  font-size: small !important;
+}

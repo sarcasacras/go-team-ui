@@ -35,27 +35,27 @@ const BigCalendar: React.FC = () => {
         }
 
         return (
-            <div className="flex justify-between items-center p-4 bg-gray-100 rounded-t-lg">
+            <div className="flex justify-between items-center p-4 bg-white rounded-t-lg">
                 {/* Navigation buttons */}
                 <div className="flex space-x-2">
                     <button
                         type="button"
                         onClick={goToPrev}
-                        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+                        className="px-4 py-2 bg-go-cyan text-black rounded hover:bg-go-cyan-shadow transition duration-300"
                     >
                         Previous
                     </button>
                     <button
                         type="button"
                         onClick={goToToday}
-                        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300"
+                        className="px-4 py-2 bg-go-green text-black rounded hover:bg-go-green-shadow transition duration-300"
                     >
                         Today
                     </button>
                     <button
                         type="button"
                         onClick={goToNext}
-                        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300"
+                        className="px-4 py-2 bg-go-cyan text-black rounded hover:bg-go-cyan-shadow transition duration-300"
                     >
                         Next
                     </button>
@@ -71,8 +71,8 @@ const BigCalendar: React.FC = () => {
                             onClick={() => toolbar.onView(name)}
                             className={`px-4 py-2 rounded transition duration-300 ${
                                 view === name
-                                    ? 'bg-indigo-500 text-white'
-                                    : 'bg-gray-300 text-gray-700 hover:bg-gray-400'
+                                    ? 'bg-go-green text-black'
+                                    : 'bg-go-cyan text-black hover:bg-go-cyan-shadow'
                             }`}
                         >
                             {name}
@@ -85,33 +85,20 @@ const BigCalendar: React.FC = () => {
 
     return (
         <Calendar
-            // Required: Localizer for date formatting
             localizer={localizer}
-            // Your array of event objects
             events={companyEvents}
-            // Specify how to access the start date from your event objects
             startAccessor="start"
-            // Specify how to access the end date from your event objects
             endAccessor="end"
-            // Available views (month and day in this case)
             views={['month', 'day']}
-            // Current view (controlled by state)
             view={view}
-            // Current date (controlled by state)
             date={date}
-            // Set the height of the calendar (adjust as needed)
             style={{ height: '98%' }}
-            // Handler for view changes
             onView={handleOnChangeView}
             // Handler for date navigation
             // 'as any' is used to bypass TypeScript errors due to type mismatches
-            // Consider updating @types/react-big-calendar if this causes issues
             onNavigate={handleNavigate as any}
-            // Set the minimum time to display (for day view)
-            min={new Date(2024, 9, 19, 7, 0, 0)}
-            // Set the maximum time to display (for day view)
+            min={new Date(2024, 9, 19, 6, 0, 0)}
             max={new Date(2024, 9, 19, 18, 0, 0)}
-            // Custom components (in this case, just the toolbar)
             components={{
                 toolbar: CustomToolbar,
             }}
