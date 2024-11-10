@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.react-calendar {
+  width: 100% !important;
+  border: none !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.react-calendar__tile--active {
+  background-color: #CAFFD0 !important;
+  color: black !important;
+}
+
+.react-calendar__tile--now {
+  background-color: #C9E4E7 !important;
+}
+
+.react-calendar__navigation__label__labelText {
+  font-weight: 600 !important;
+}
+
+.recharts-default-legend {
+  display: flex;
+  justify-content: space-evenly;
+}
