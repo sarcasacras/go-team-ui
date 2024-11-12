@@ -54,4 +54,40 @@ body {
   background-color: #CAFFD0 !important;
   color: gray !important;
   font-size: small !important;
+  border: 0.5px solid #d1cbcb !important;
+  border-radius: 5px !important;
+  padding: 10px !important;
+  margin: 1px !important;
+  width: 99% !important;
 }
+
+.rbc-time-slot {
+  border: none !important; 
+}
+
+.rbc-time-view {
+  border: none !important;
+}
+
+.rbc-time-header {
+  display: none !important;
+}
+
+.rbc-time-content {
+  border-top: 1px solid #ddd !important;
+}
+
+.rbc-current-time-indicator {
+  background-color: #B4A0E5 !important;
+}
+
+.rbc-day-slot.rbc-time-column.rbc-now.rbc-today {
+  background-color: #c9e4e739 !important;
+}
+
+.rbc-off-range-bg {
+  background-color: #f7f7f7 !important;
+}
+
+
+

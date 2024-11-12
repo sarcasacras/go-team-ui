@@ -15,13 +15,13 @@ const menuItems = [
             {
                 icon: "/manager.png",
                 label: "Managers",
-                href: "/managers",
+                href: "/list/managers",
                 visible: ["admins"]
             },
             {
                 icon: "/user.png",
                 label: "Employees",
-                href: "/employees",
+                href: "/list/workers",
                 visible: ["managers", "admins"]
             },
             {
