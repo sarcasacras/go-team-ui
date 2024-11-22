@@ -1,10 +1,7 @@
-const WorkersPage: React.FC = () => {
+export default function WorkersPage() {
     return (
-        <div>
-            <h1 className="text-black">Workers Page</h1>
-            <p className="text-black">This is a placeholder text for the Workers Page.</p>
+        <div className="bg-white p-4 flex-1 rounded-md m-4 mt-0">
+            Workers Page
         </div>
     );
-};
-
-export default WorkersPage;
+}
