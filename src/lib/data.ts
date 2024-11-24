@@ -83,3 +83,156 @@ export const companyEvents = [
         end: createDate(lastDay, 19, 0),
     }
 ];
+
+export const workersData = [
+    {
+        id: 1,
+        name: "Sarah Johnson",
+        position: "Senior Developer",
+        department: "Engineering",
+        email: "sarah.j@company.com",
+        status: "Active",
+        joinDate: "2022-03-15",
+        avatar: "/worker-avatars/sarah_johnson.png"
+    },
+    {
+        id: 2,
+        name: "Michael Chen",
+        position: "UX Designer",
+        department: "Design",
+        email: "m.chen@company.com",
+        status: "Active",
+        joinDate: "2021-11-30",
+        avatar: "/worker-avatars/michael_chen.png"
+    },
+    {
+        id: 3,
+        name: "Emma Wilson",
+        position: "Project Manager",
+        department: "Management",
+        email: "e.wilson@company.com",
+        status: "On Leave",
+        joinDate: "2023-01-10",
+        avatar: "/worker-avatars/emma_wilson.png"
+    },
+    {
+        id: 4,
+        name: "James Rodriguez",
+        position: "Frontend Developer",
+        department: "Engineering",
+        email: "j.rodriguez@company.com",
+        status: "Active",
+        joinDate: "2023-06-22",
+        avatar: "/worker-avatars/james_rodriguez.png"
+    },
+    {
+        id: 5,
+        name: "Lisa Thompson",
+        position: "QA Engineer",
+        department: "Quality Assurance",
+        email: "l.thompson@company.com",
+        status: "Active",
+        joinDate: "2022-09-05",
+        avatar: "/worker-avatars/lisa_thompson.png"
+    },
+    {
+        id: 6,
+        name: "David Kim",
+        position: "Backend Developer",
+        department: "Engineering",
+        email: "d.kim@company.com",
+        status: "Active",
+        joinDate: "2023-08-15",
+        avatar: "/worker-avatars/david_kim.png"
+    },
+    {
+        id: 7,
+        name: "Anna Kowalski",
+        position: "UI Designer", 
+        department: "Design",
+        email: "a.kowalski@company.com",
+        status: "Inactive",
+        joinDate: "2021-05-20",
+        avatar: "/worker-avatars/anna_kowalski.png"
+    },
+    {
+        id: 8,
+        name: "Robert Garcia",
+        position: "DevOps Engineer",
+        department: "Engineering",
+        email: "r.garcia@company.com",
+        status: "Active",
+        joinDate: "2022-12-01",
+        avatar: "/worker-avatars/robert_garcia.png"
+    },
+    {
+        id: 9,
+        name: "Emily Brown",
+        position: "Product Manager",
+        department: "Management",
+        email: "e.brown@company.com",
+        status: "Active",
+        joinDate: "2023-03-28",
+        avatar: "/worker-avatars/emily_brown.png"
+    },
+    {
+        id: 10,
+        name: "Alex Turner",
+        position: "Systems Architect",
+        department: "Engineering",
+        email: "a.turner@company.com",
+        status: "Active",
+        joinDate: "2021-09-14",
+        avatar: "/worker-avatars/alex_turner.png"
+    },
+    {
+        id: 11,
+        name: "Maria Santos",
+        position: "QA Lead",
+        department: "Quality Assurance",
+        email: "m.santos@company.com",
+        status: "Active",
+        joinDate: "2022-07-19",
+        avatar: "/worker-avatars/maria_santos.png"
+    },
+    {
+        id: 12,
+        name: "John Smith",
+        position: "Full Stack Developer",
+        department: "Engineering",
+        email: "j.smith@company.com",
+        status: "On Leave",
+        joinDate: "2023-02-08",
+        avatar: "/worker-avatars/john_smith.png"
+    },
+    {
+        id: 13,
+        name: "Sophie Martin",
+        position: "UX Researcher",
+        department: "Design",
+        email: "s.martin@company.com",
+        status: "Active",
+        joinDate: "2023-04-03",
+        avatar: "/worker-avatars/sophie_martin.png"
+    },
+    {
+        id: 14,
+        name: "Ryan Parker",
+        position: "Technical Lead",
+        department: "Engineering",
+        email: "r.parker@company.com",
+        status: "Active",
+        joinDate: "2021-08-24",
+        avatar: "/worker-avatars/ryan_parker.png"
+    },
+    {
+        id: 15,
+        name: "Nina Patel",
+        position: "Business Analyst",
+        department: "Management",
+        email: "n.patel@company.com",
+        status: "Active",
+        joinDate: "2022-11-16",
+        avatar: "/worker-avatars/nina_patel.png"
+    }
+];

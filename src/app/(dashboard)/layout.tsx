@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import Menu from "@/app/components/menu";
-import Navbar from "@/app/components/navbar";
+import Menu from "@/app/components/Menu";
+import Navbar from "@/app/components/Navbar";
 
 export default function DashboardLayout({
     children,
@@ -20,7 +20,7 @@ export default function DashboardLayout({
                 </Link>
                 <Menu />
             </div>
-            <div className="w-[75%] md:w-[80%] lg:w-[82%] xl:w-[84%] bg-[#e8ecfd]">
+            <div className="w-[75%] md:w-[80%] lg:w-[82%] xl:w-[84%] bg-[#e8ecfd] h-screen">
                 <Navbar />
                 {children}
             </div>
