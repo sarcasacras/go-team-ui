@@ -33,13 +33,13 @@ const menuItems = [
             {
                 icon: "/project.png",
                 label: "Projects",
-                href: "/projects",
+                href: "/list/projects",
                 visible: ["managers", "workers", "admins"]
             },
             {
                 icon: "/tasks.png",
                 label: "Tasks",
-                href: "/tasks",
+                href: "/list/tasks",
                 visible: ["managers", "workers", "admins"]
             },
             {
