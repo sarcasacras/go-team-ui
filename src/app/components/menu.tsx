@@ -9,7 +9,9 @@ const menuItems = [
             {
                 icon: "/home.png",
                 label: "Dashboard",
-                href: "/admin",
+                href: role === "managers" ? "/manager" :
+                      role === "admins" ? "/admin" :
+                      role === "workers" ? "/user" : "/login",
                 visible: ["managers", "workers", "admins"]
             },
             {

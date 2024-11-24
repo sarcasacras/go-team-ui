@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { role } from "@/lib/data";
 
 const Navbar = () => {
     return (
@@ -26,7 +27,8 @@ const Navbar = () => {
                 </div>
                 <div className="flex flex-col justify-center items-center text-center">
                     <span className="text-xs leading-3 font-medium">Andrew Davidovich</span>
-                    <span className="text-[10px] text-gray-500 text-right">Admin</span>        
+                    <span className="text-[10px] text-gray-500 text-right">{role === "admins" ? "Admin" : role === "managers" ? "Manager" : "User"}</span>        
+                
                 </div>
                 <Image src="/avatar.png" alt="" width={32} height={32} className="rounded-full" />
             </div>

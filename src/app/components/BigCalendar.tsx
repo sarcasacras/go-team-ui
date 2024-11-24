@@ -35,27 +35,27 @@ const BigCalendar: React.FC = () => {
         }
 
         return (
-            <div className="flex justify-between items-center p-4 bg-white rounded-t-lg">
+            <div className="xl:flex-row flex flex-col justify-between items-center p-4 bg-white rounded-t-lg">
                 {/* Navigation buttons */}
                 <div className="flex space-x-2">
                     <button
                         type="button"
                         onClick={goToPrev}
-                        className="px-4 py-2 bg-go-cyan text-black rounded hover:bg-go-cyan-shadow transition duration-300"
+                        className="xl:block hidden px-4 py-2 bg-go-cyan text-black rounded hover:bg-go-cyan-shadow transition duration-300"
                     >
                         Previous
                     </button>
                     <button
                         type="button"
                         onClick={goToToday}
-                        className="px-4 py-2 bg-go-green text-black rounded hover:bg-go-green-shadow transition duration-300"
+                        className="xl:block hidden px-4 py-2 bg-go-green text-black rounded hover:bg-go-green-shadow transition duration-300"
                     >
                         Today
                     </button>
                     <button
                         type="button"
                         onClick={goToNext}
-                        className="px-4 py-2 bg-go-cyan text-black rounded hover:bg-go-cyan-shadow transition duration-300"
+                        className="xl:block hidden px-4 py-2 bg-go-cyan text-black rounded hover:bg-go-cyan-shadow transition duration-300"
                     >
                         Next
                     </button>
@@ -69,7 +69,7 @@ const BigCalendar: React.FC = () => {
                             key={name}
                             type="button"
                             onClick={() => toolbar.onView(name)}
-                            className={`px-4 py-2 rounded transition duration-300 ${
+                            className={`px-4 py-2 rounded transition duration-300 my-3 ${
                                 view === name
                                     ? 'bg-go-green text-black'
                                     : 'bg-go-cyan text-black hover:bg-go-cyan-shadow'
@@ -92,7 +92,7 @@ const BigCalendar: React.FC = () => {
             views={['month', 'day']}
             view={view}
             date={date}
-            style={{ height: '98%' }}
+            style={{ height: '98%' , minHeight: '500px' }}
             onView={handleOnChangeView}
             // Handler for date navigation
             // 'as any' is used to bypass TypeScript errors due to type mismatches

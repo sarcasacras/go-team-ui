@@ -9,7 +9,7 @@ export default function TableSearch() {
                 width={14}
                 height={14}
             />
-            <input type="text" placeholder="Search..." className="w-[200px] pw-2 bg-transparent outline-none" />
+            <input type="text" placeholder="Search..." className="w-[200px] pw-2 bg-transparent outline-none text-black" />
         </div>
     );
 }

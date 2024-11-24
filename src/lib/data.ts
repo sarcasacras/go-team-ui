@@ -1,4 +1,4 @@
-export let role = "managers"
+export let role = "admins";
 
 // Function to get the last day of the current month
 const getLastDayOfMonth = (year: number, month: number) => new Date(year, month + 1, 0).getDate();
@@ -29,6 +29,12 @@ export const companyEvents = [
         end: createDate(1, 11, 0),
     },
     {
+        title: "Department Updates",
+        allDay: false,
+        start: createDate(1, 14, 0), // Same day as Monthly Kickoff
+        end: createDate(1, 15, 30),
+    },
+    {
         title: "Team Building Workshop",
         allDay: true,
         start: createDate(3, 9, 0),
@@ -41,6 +47,12 @@ export const companyEvents = [
         end: createDate(7, 16, 30),
     },
     {
+        title: "Sprint Planning",
+        allDay: false,
+        start: createDate(7, 10, 0), // Same day as Product Roadmap
+        end: createDate(7, 12, 0),
+    },
+    {
         title: "Customer Appreciation Day",
         allDay: true,
         start: createDate(10, 10, 0),
@@ -51,6 +63,12 @@ export const companyEvents = [
         allDay: false,
         start: createDate(14, 10, 0),
         end: createDate(14, 12, 0),
+    },
+    {
+        title: "Q4 Planning",
+        allDay: false,
+        start: createDate(14, 14, 0), // Same day as Board Meeting
+        end: createDate(14, 16, 0),
     },
     {
         title: "Innovation Hackathon",
@@ -71,16 +89,34 @@ export const companyEvents = [
         end: createDate(21, 12, 0),
     },
     {
+        title: "Security Workshop",
+        allDay: false,
+        start: createDate(21, 14, 0), // Same day as Cybersecurity Training
+        end: createDate(21, 16, 0),
+    },
+    {
         title: "Project Milestone Celebration",
         allDay: false,
         start: createDate(23, 16, 0),
         end: createDate(23, 18, 0),
     },
     {
+        title: "Team Presentations",
+        allDay: false,
+        start: createDate(23, 13, 0), // Same day as Milestone Celebration
+        end: createDate(23, 15, 0),
+    },
+    {
         title: "Month-End Office Party",
         allDay: false,
         start: createDate(lastDay, 15, 0),
         end: createDate(lastDay, 19, 0),
+    },
+    {
+        title: "Department Reviews",
+        allDay: false,
+        start: createDate(lastDay, 10, 0), // Same day as Office Party
+        end: createDate(lastDay, 14, 0),
     }
 ];
 
@@ -762,5 +798,201 @@ export const tasksData = [
         priority: "High",
         completionRate: 40,
         description: "Develop automated testing framework"
+    }
+];
+
+export const messagesData = [
+    {
+        id: 1,
+        sender: "Michael Chen",
+        subject: "Design Review Meeting",
+        date: "2023-10-15",
+        status: "Unread",
+        avatar: "/worker-avatars/michael_chen.png"
+    },
+    {
+        id: 2,
+        sender: "Emma Wilson",
+        subject: "Project Timeline Update",
+        date: "2023-10-14",
+        status: "Read",
+        avatar: "/worker-avatars/emma_wilson.png"
+    },
+    {
+        id: 3,
+        sender: "David Kim",
+        subject: "Backend Deployment",
+        date: "2023-10-13",
+        status: "Unread",
+        avatar: "/worker-avatars/david_kim.png"
+    },
+    {
+        id: 4,
+        sender: "Sarah Johnson",
+        subject: "New Feature Request",
+        date: "2023-10-12",
+        status: "Read",
+        avatar: "/worker-avatars/sarah_johnson.png"
+    },
+    {
+        id: 5,
+        sender: "Emily Brown",
+        subject: "Meeting Reschedule",
+        date: "2023-10-11",
+        status: "Unread",
+        avatar: "/worker-avatars/emily_brown.png"
+    },
+    {
+        id: 6,
+        sender: "James Rodriguez",
+        subject: "Code Review Feedback",
+        date: "2023-10-10",
+        status: "Read",
+        avatar: "/worker-avatars/james_rodriguez.png"
+    },
+    {
+        id: 7,
+        sender: "Lisa Thompson",
+        subject: "QA Test Results",
+        date: "2023-10-09",
+        status: "Unread",
+        avatar: "/worker-avatars/lisa_thompson.png"
+    },
+    {
+        id: 8,
+        sender: "Robert Garcia",
+        subject: "Server Maintenance",
+        date: "2023-10-08",
+        status: "Read",
+        avatar: "/worker-avatars/robert_garcia.png"
+    },
+    {
+        id: 9,
+        sender: "John Smith",
+        subject: "API Integration",
+        date: "2023-10-07",
+        status: "Unread",
+        avatar: "/worker-avatars/john_smith.png"
+    },
+    {
+        id: 10,
+        sender: "Anna Kowalski",
+        subject: "UI Updates",
+        date: "2023-10-06",
+        status: "Read",
+        avatar: "/worker-avatars/anna_kowalski.png"
+    }
+];
+
+export const reportsData = [
+    {
+        id: 1,
+        author: "Ryan Parker",
+        department: "Engineering",
+        title: "Q1 Technical Infrastructure Review",
+        date: "2024-03-30",
+        status: "Submitted",
+        priority: "High",
+        type: "Technical",
+        content: "Comprehensive analysis of our current technical infrastructure including cloud services utilization, system performance metrics, and recommendations for Q2 improvements."
+    },
+    {
+        id: 2,
+        author: "Michael Chen",
+        department: "Design",
+        title: "User Experience Analysis",
+        date: "2024-03-25",
+        status: "In Review",
+        priority: "Medium",
+        type: "Analysis",
+        content: "Detailed review of user interaction patterns, pain points identified during usability testing, and proposed solutions for improving overall user experience."
+    },
+    {
+        id: 3,
+        author: "Patricia Wang",
+        department: "Finance",
+        title: "Monthly Budget Report",
+        date: "2024-03-31",
+        status: "Submitted",
+        priority: "Critical",
+        type: "Financial",
+        content: "Monthly financial overview including project budgets, department expenses, and resource allocation recommendations for upcoming projects."
+    },
+    {
+        id: 4,
+        author: "Maria Santos",
+        department: "Quality Assurance",
+        title: "Security Compliance Report",
+        date: "2024-03-28",
+        status: "Draft",
+        priority: "High",
+        type: "Security",
+        content: "Assessment of current security measures, compliance status with industry standards, and identified areas requiring immediate attention."
+    },
+    {
+        id: 5,
+        author: "Daniel Brown",
+        department: "Human Resources",
+        title: "Employee Satisfaction Survey Results",
+        date: "2024-03-27",
+        status: "Submitted",
+        priority: "Medium",
+        type: "HR",
+        content: "Analysis of quarterly employee satisfaction survey results, key findings, and proposed action items for improving workplace satisfaction."
+    },
+    {
+        id: 6,
+        author: "Alice Cooper",
+        department: "Marketing",
+        title: "Q1 Marketing Performance",
+        date: "2024-03-29",
+        status: "In Review",
+        priority: "High",
+        type: "Marketing",
+        content: "Quarterly marketing campaign results, ROI analysis, and strategic recommendations for Q2 marketing initiatives."
+    },
+    {
+        id: 7,
+        author: "Thomas Anderson",
+        department: "Customer Support",
+        title: "Customer Feedback Analysis",
+        date: "2024-03-26",
+        status: "Draft",
+        priority: "Medium",
+        type: "Analysis",
+        content: "Summary of customer feedback trends, support ticket analysis, and proposed improvements for customer service processes."
+    },
+    {
+        id: 8,
+        author: "Emma Wilson",
+        department: "Management",
+        title: "Project Management Overview",
+        date: "2024-03-24",
+        status: "Submitted",
+        priority: "High",
+        type: "Management",
+        content: "Overview of current project statuses, resource allocation efficiency, and recommendations for improving project delivery timelines."
+    },
+    {
+        id: 9,
+        author: "David Kim",
+        department: "Engineering",
+        title: "Backend Performance Metrics",
+        date: "2024-03-23",
+        status: "In Review",
+        priority: "High",
+        type: "Technical",
+        content: "Analysis of backend system performance, identified bottlenecks, and proposed optimization solutions."
+    },
+    {
+        id: 10,
+        author: "Sophie Martin",
+        department: "Design",
+        title: "Design System Evaluation",
+        date: "2024-03-22",
+        status: "Draft",
+        priority: "Medium",
+        type: "Design",
+        content: "Evaluation of current design system implementation, consistency audit results, and recommendations for improvement."
     }
 ];
