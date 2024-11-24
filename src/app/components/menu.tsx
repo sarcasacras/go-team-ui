@@ -9,7 +9,7 @@ const menuItems = [
             {
                 icon: "/home.png",
                 label: "Dashboard",
-                href: "/dashboard",
+                href: "/admin",
                 visible: ["managers", "workers", "admins"]
             },
             {
@@ -27,7 +27,7 @@ const menuItems = [
             {
                 icon: "/department.png",
                 label: "Departments",
-                href: "/departments",
+                href: "/list/departments",
                 visible: ["managers", "admins"]
             },
             {

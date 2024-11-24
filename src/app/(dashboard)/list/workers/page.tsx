@@ -1,5 +1,5 @@
 import Pagination from "@/app/components/Pagination";
-import Table from "@/app/components/Table";
+import Table from "@/app/components/WorkersTable";
 import TableSearch from "@/app/components/TableSearch";
 import Image from "next/image";
 

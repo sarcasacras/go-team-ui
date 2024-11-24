@@ -236,3 +236,70 @@ export const workersData = [
         avatar: "/worker-avatars/nina_patel.png"
     }
 ];
+
+export const departmentsData = [
+    {
+        id: 1,
+        name: "Engineering",
+        description: "Software development and technical infrastructure",
+        head: "Ryan Parker",
+        employeeCount: 5,
+        color: "go-cyan"
+    },
+    {
+        id: 2,
+        name: "Design",
+        description: "User experience and interface design",
+        head: "Michael Chen",
+        employeeCount: 2,
+        color: "go-green"
+    },
+    {
+        id: 3,
+        name: "Management",
+        description: "Project and business management",
+        head: "Emma Wilson",
+        employeeCount: 2,
+        color: "go-cyan"
+    },
+    {
+        id: 4,
+        name: "Quality Assurance",
+        description: "Software testing and quality control",
+        head: "Maria Santos",
+        employeeCount: 1,
+        color: "go-green"
+    },
+    {
+        id: 5,
+        name: "Marketing",
+        description: "Brand development and market strategies",
+        head: "Alice Cooper",
+        employeeCount: 3,
+        color: "go-cyan"
+    },
+    {
+        id: 6,
+        name: "Human Resources",
+        description: "Employee relations and recruitment",
+        head: "Daniel Brown",
+        employeeCount: 2,
+        color: "go-green"
+    },
+    {
+        id: 7,
+        name: "Finance",
+        description: "Financial planning and accounting",
+        head: "Patricia Wang",
+        employeeCount: 4,
+        color: "go-cyan"
+    },
+    {
+        id: 8,
+        name: "Customer Support",
+        description: "Client assistance and service management",
+        head: "Thomas Anderson",
+        employeeCount: 3,
+        color: "go-green"
+    }
+];
