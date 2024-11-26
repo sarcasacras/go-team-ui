@@ -1,95 +1,94 @@
+'use client'
 import Link from "next/link"
 import Image from "next/image";
-import { role } from "@/lib/data";
+import { useRole } from "@/context/RoleContext";
 
-const menuItems = [
-    {
-        title: "MENU",
-        items: [
-            {
-                icon: "/home.png",
-                label: "Dashboard",
-                href: role === "managers" ? "/manager" :
-                      role === "admins" ? "/admin" :
-                      role === "workers" ? "/user" : "/login",
-                visible: ["managers", "workers", "admins"]
-            },
-            {
-                icon: "/manager.png",
-                label: "Managers",
-                href: "/list/managers",
-                visible: ["admins"]
-            },
-            {
-                icon: "/user.png",
-                label: "Employees",
-                href: "/list/workers",
-                visible: ["managers", "admins"]
-            },
-            {
-                icon: "/department.png",
-                label: "Departments",
-                href: "/list/departments",
-                visible: ["managers", "admins"]
-            },
-            {
-                icon: "/project.png",
-                label: "Projects",
-                href: "/list/projects",
-                visible: ["managers", "workers", "admins"]
-            },
-            {
-                icon: "/tasks.png",
-                label: "Tasks",
-                href: "/list/tasks",
-                visible: ["managers", "workers", "admins"]
-            },
-            {
-                icon: "/calendar.png",
-                label: "Schedule",
-                href: "/schedule",
-                visible: ["managers", "workers", "admins"]
-            },
-            {
-                icon: "/reports.png",
-                label: "Reports",
-                href: "/reports",
-                visible: ["managers", "admins"]
-            },
-            {
-                icon: "/messages.png",
-                label: "Messages",
-                href: "/messages",
-                visible: ["managers", "workers", "admins"]
-            }
-        ]
-    },
-    {
-        title: "OTHER",
-        items: [
-            {
-                icon: "/profile.png",
-                label: "My Profile",
-                href: "/profile",
-                visible: ["managers", "workers", "admins"]
-            },
-            {
-                icon: "/settings.png",
-                label: "Settings",
-                href: "/settings",
-                visible: ["managers", "workers", "admins"]
-            },
-            {
-                icon: "/logout.png",
-                label: "Logout",
-                href: "/logout",
-                visible: ["managers", "workers", "admins"]
-            }
-        ]
-    }
-];
+
+
+
 
 const Menu = () => {
+    const { role } = useRole();
+    const menuItems = [
+        {
+            title: "MENU",
+            items: [
+                {
+                    icon: "/home.png",
+                    label: "Dashboard",
+                    href: role === "managers" ? "/manager" :
+                          role === "admins" ? "/admin" :
+                          role === "workers" ? "/user" : "/login",
+                    visible: ["managers", "workers", "admins"]
+                },
+                {
+                    icon: "/manager.png",
+                    label: "Managers",
+                    href: "/list/managers",
+                    visible: ["admins"]
+                },
+                {
+                    icon: "/user.png",
+                    label: "Employees",
+                    href: "/list/workers",
+                    visible: ["managers", "admins"]
+                },
+                {
+                    icon: "/department.png",
+                    label: "Departments",
+                    href: "/list/departments",
+                    visible: ["managers", "admins"]
+                },
+                {
+                    icon: "/project.png",
+                    label: "Projects",
+                    href: "/list/projects",
+                    visible: ["managers", "workers", "admins"]
+                },
+                {
+                    icon: "/tasks.png",
+                    label: "Tasks",
+                    href: "/list/tasks",
+                    visible: ["managers", "workers", "admins"]
+                },
+                {
+                    icon: "/calendar.png",
+                    label: "Schedule",
+                    href: "/schedule",
+                    visible: ["managers", "workers", "admins"]
+                },
+                {
+                    icon: "/reports.png",
+                    label: "Reports",
+                    href: "/reports",
+                    visible: ["managers", "admins"]
+                },
+                {
+                    icon: "/messages.png",
+                    label: "Messages",
+                    href: "/messages",
+                    visible: ["managers", "workers", "admins"]
+                }
+            ]
+        },
+        {
+            title: "OTHER",
+            items: [
+                {
+                    icon: "/profile.png",
+                    label: "My Profile",
+                    href: "/profile",
+                    visible: ["managers", "workers", "admins"]
+                },
+                {
+                    icon: "/logout.png",
+                    label: "Logout",
+                    href: "/",
+                    visible: ["managers", "workers", "admins"]
+                }
+            ]
+        }
+    ];
     return (
         // background
         <div className="mt-4 text-sm bg-white">

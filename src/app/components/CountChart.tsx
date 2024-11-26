@@ -10,12 +10,12 @@ const data = [
     },
     {
         name: 'Done',
-        count: 50,
+        count: 23,
         fill: '#caffd0',
     },
     {
         name: 'Not Done',
-        count: 50,
+        count: 77,
         fill: '#b4a0e5',
     }
 ]
@@ -53,12 +53,12 @@ export default function CountChart() {
             <div className="flex justify-center gap-16">
                 <div className="flex flex-col gap-1 items-center">
                     <div className="w-5 h-5 bg-go-green rounded-full" />
-                    <h1 className="font-normal text-black">1,234</h1>
+                    <h1 className="font-normal text-black">230</h1>
                     <h2 className="text-xs text-gray-300">Done Tasks</h2>
                 </div>
                 <div className="flex flex-col gap-1 items-center">
                     <div className="w-5 h-5 bg-go-wisteria rounded-full" />
-                    <h1 className="font-normal text-black">1,234</h1>
+                    <h1 className="font-normal text-black">770</h1>
                     <h2 className="text-xs text-gray-300">Not Done Tasks</h2>
                 </div>
             </div>

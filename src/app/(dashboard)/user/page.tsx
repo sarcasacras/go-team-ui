@@ -1,3 +1,4 @@
+'use client'
 import Announcements from "@/app/components/Announcements";
 import Card from "@/app/components/Card";
 import EventCalendar from "@/app/components/EventCalendar";
@@ -6,8 +7,16 @@ import ProjectCard from "@/app/components/ProjectCard";
 import ReportForm from "@/app/components/ReportForm";
 import TaskCard from "@/app/components/TaskCard";
 import TasksChart from "@/app/components/TasksChart";
+import { useRole } from "@/context/RoleContext";
+import { useEffect } from 'react';
 
 function UserPage() {
+    const { setRole } = useRole();
+
+    useEffect(() => {
+        setRole('workers');
+    }, [setRole]);
+
     return (
         // whole page (left+right) 
         <div className="p-4 flex gap-3 flex-col lg:flex-row">

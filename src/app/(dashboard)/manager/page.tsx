@@ -1,3 +1,5 @@
+'use client'
+import { useEffect } from 'react';
 import Announcements from "@/app/components/Announcements";
 import Card from "@/app/components/Card";
 import EventCalendar from "@/app/components/EventCalendar";
@@ -7,8 +9,15 @@ import ReportForm from "@/app/components/ReportForm";
 import TaskCard from "@/app/components/TaskCard";
 import TaskLineChart from "@/app/components/TaskLineChart";
 import WorkerCard from "@/app/components/WorkerCard";
+import { useRole } from "@/context/RoleContext";
 
 function ManagerPage() {
+    const { setRole } = useRole();
+
+    useEffect(() => {
+        setRole('managers');
+    }, [setRole]);
+    
     return (
         // whole page
         <div className="p-4 flex gap-3 flex-col lg:flex-row">

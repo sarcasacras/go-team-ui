@@ -1,4 +1,4 @@
-export let role = "admins";
+export let role = '';
 
 // Function to get the last day of the current month
 const getLastDayOfMonth = (year: number, month: number) => new Date(year, month + 1, 0).getDate();
@@ -994,5 +994,152 @@ export const reportsData = [
         priority: "Medium",
         type: "Design",
         content: "Evaluation of current design system implementation, consistency audit results, and recommendations for improvement."
+    }
+];
+
+export const managersData = [
+    {
+        id: 1,
+        name: "Ryan Parker",
+        department: "Engineering",
+        position: "Engineering Director",
+        email: "r.parker@company.com",
+        reports: 7,
+        experience: "12 years",
+        status: "Active",
+        avatar: "/worker-avatars/ryan_parker.png",
+        managementLevel: "Director",
+        keyResponsibilities: [
+            "Technical Leadership",
+            "Team Development",
+            "Project Oversight",
+            "Architecture Planning"
+        ]
+    },
+    {
+        id: 2,
+        name: "Michael Chen",
+        department: "Design",
+        position: "Design Director",
+        email: "m.chen@company.com",
+        reports: 4,
+        experience: "8 years",
+        status: "Active",
+        avatar: "/worker-avatars/michael_chen.png",
+        managementLevel: "Director",
+        keyResponsibilities: [
+            "Design Strategy",
+            "UX Leadership",
+            "Brand Guidelines",
+            "Team Coordination"
+        ]
+    },
+    {
+        id: 3,
+        name: "Emma Wilson",
+        department: "Management",
+        position: "Senior Project Manager",
+        email: "e.wilson@company.com",
+        reports: 5,
+        experience: "9 years",
+        status: "Active",
+        avatar: "/worker-avatars/emma_wilson.png",
+        managementLevel: "Senior Manager",
+        keyResponsibilities: [
+            "Project Portfolio",
+            "Resource Management",
+            "Risk Assessment",
+            "Stakeholder Relations"
+        ]
+    },
+    {
+        id: 4,
+        name: "Maria Santos",
+        department: "Quality Assurance",
+        position: "QA Director",
+        email: "m.santos@company.com",
+        reports: 3,
+        experience: "10 years",
+        status: "Active",
+        avatar: "/worker-avatars/maria_santos.png",
+        managementLevel: "Director",
+        keyResponsibilities: [
+            "Quality Strategy",
+            "Testing Leadership",
+            "Process Improvement",
+            "Compliance Oversight"
+        ]
+    },
+    {
+        id: 5,
+        name: "Alice Cooper",
+        department: "Marketing",
+        position: "Marketing Director",
+        email: "a.cooper@company.com",
+        reports: 6,
+        experience: "11 years",
+        status: "Active",
+        avatar: "/worker-avatars/alice_cooper.png",
+        managementLevel: "Director",
+        keyResponsibilities: [
+            "Marketing Strategy",
+            "Brand Management",
+            "Campaign Oversight",
+            "Market Analysis"
+        ]
+    },
+    {
+        id: 6,
+        name: "Daniel Brown",
+        department: "Human Resources",
+        position: "HR Director",
+        email: "d.brown@company.com",
+        reports: 4,
+        experience: "9 years",
+        status: "Active",
+        avatar: "/worker-avatars/daniel_brown.png",
+        managementLevel: "Director",
+        keyResponsibilities: [
+            "HR Strategy",
+            "Talent Management",
+            "Employee Relations",
+            "Policy Development"
+        ]
+    },
+    {
+        id: 7,
+        name: "Patricia Wang",
+        department: "Finance",
+        position: "Finance Director",
+        email: "p.wang@company.com",
+        reports: 5,
+        experience: "15 years",
+        status: "Active",
+        avatar: "/worker-avatars/patricia_wang.png",
+        managementLevel: "Director",
+        keyResponsibilities: [
+            "Financial Strategy",
+            "Budget Management",
+            "Risk Assessment",
+            "Financial Planning"
+        ]
+    },
+    {
+        id: 8,
+        name: "Thomas Anderson",
+        department: "Customer Support",
+        position: "Support Director",
+        email: "t.anderson@company.com",
+        reports: 4,
+        experience: "7 years",
+        status: "Active",
+        avatar: "/worker-avatars/thomas_anderson.png",
+        managementLevel: "Director",
+        keyResponsibilities: [
+            "Support Strategy",
+            "Customer Experience",
+            "Team Leadership",
+            "Service Quality"
+        ]
     }
 ];
