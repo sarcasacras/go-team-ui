@@ -18,8 +18,8 @@ export const metadata: Metadata = {
   title: "GoTeam App",
   description: "Team Management App",
   icons: {
-    icon: {url: '/favicon.ico', sizes: 'any'}
-  }
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
@@ -29,11 +29,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white`}
       >
         <RoleProvider>
-        {children}
+          {children}
         </RoleProvider>
       </body>
     </html>

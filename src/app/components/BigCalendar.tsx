@@ -16,7 +16,7 @@ const BigCalendar: React.FC = () => {
         setView(newView)
     }
 
-    const handleNavigate = (newDate: Date, view: View, action: 'PREV' | 'NEXT' | 'TODAY') => {
+    const handleNavigate = (newDate: Date) => {
         setDate(newDate)
         // additional logic here if needed, e.g., fetching events for the new date range
     }

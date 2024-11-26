@@ -49,7 +49,7 @@ function ProfilePage() {
                     <Card title="About Me">
                         <div className="space-y-4 text-black">
                             <p>
-                                Hello, I'm {worker.name}, a {worker.position} in the {worker.department} department.
+                                Hello, I&apos;m {worker.name}, a {worker.position} in the {worker.department} department.
                                 I joined the company on {worker.joinDate} and have been actively
                                 contributing to our
                                 technical infrastructure and system architecture.
@@ -58,7 +58,7 @@ function ProfilePage() {
                                 As a Systems Architect, I specialize in designing scalable
                                 and maintainable software solutions.
                                 My role involves making critical technical decisions
-                                that shape our platform's architecture, ensuring we build robust
+                                that shape our platform&apos;s architecture, ensuring we build robust
                                 and future-proof systems.
                             </p>
                             <p>
@@ -68,7 +68,7 @@ function ProfilePage() {
                                 thinking to deliver solutions that align with our business goals.
                             </p>
                             <p>
-                                Currently, I'm focused on modernizing our core infrastructure
+                                Currently, I&apos;m focused on modernizing our core infrastructure
                                 and implementing new architectural patterns to improve system
                                 reliability and performance. I also mentor junior developers
                                 and contribute to our technical documentation.

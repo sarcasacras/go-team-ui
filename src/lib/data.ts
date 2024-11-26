@@ -1,5 +1,3 @@
-export let role = '';
-
 // Function to get the last day of the current month
 const getLastDayOfMonth = (year: number, month: number) => new Date(year, month + 1, 0).getDate();
 

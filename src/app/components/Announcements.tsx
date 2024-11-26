@@ -23,7 +23,7 @@ export default function Announcements() {
                     <span className="text-xs ml-4 underline">2025.05.02</span>
                 </div>
                 <p className="text-sm mt-1">
-                    We're excited to welcome Jane Smith as our new Marketing Director starting next Monday.
+                    We&apos;re excited to welcome Jane Smith as our new Marketing Director starting next Monday.
                     Stop by to say hello!
                 </p>
             </div>
@@ -34,7 +34,7 @@ export default function Announcements() {
                 </div>
                 <p className="text-sm mt-1">
                     Reminder: The company picnic is coming up on Saturday, June 15th.
-                    Don't forget to RSVP and sign up to bring a dish.
+                    Don&apos;t forget to RSVP and sign up to bring a dish.
                 </p>
             </div>
         </div>

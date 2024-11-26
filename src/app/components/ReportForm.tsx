@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image';
 import React, { useState } from 'react';
-import { role } from '@/lib/data';
 
 export default function ReportForm({ buttonStyle, buttonDivStyle }: { buttonStyle?: string, buttonDivStyle?: string }) {
     const [report, setReport] = useState<string>('');
