@@ -2,13 +2,11 @@
 import Link from "next/link"
 import Image from "next/image";
 import { useRole } from "@/context/RoleContext";
-
-
-
-
+import { usePathname } from 'next/navigation';
 
 const Menu = () => {
     const { role } = useRole();
+    const pathname = usePathname();
     const menuItems = [
         {
             title: "MENU",
@@ -105,7 +103,7 @@ const Menu = () => {
                                 <Link
                                     href={item.href}
                                     key={item.label}
-                                    className="
+                                    className={`
                                     flex 
                                     items-center 
                                     justify-center 
@@ -113,12 +111,12 @@ const Menu = () => {
                                     gap-4 
                                     text-gray-500 
                                     py-2
-                                    hover:bg-go-green
                                     rounded-lg
                                     md:px-2
                                     transition
                                     duration-500
-                                    "
+                                    ${pathname === item.href ? 'bg-go-cyan' : 'hover:bg-go-green'}
+                                    `}
                                 >
                                     <Image
                                         src={item.icon}
@@ -133,6 +131,7 @@ const Menu = () => {
                                 </Link>
                             )
                         }
+                        return null; // Add explicit return for non-matching items
                     })}
                 </div>
             ))}

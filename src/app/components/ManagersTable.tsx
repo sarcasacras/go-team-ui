@@ -42,7 +42,7 @@ export default function ManagersTable() {
                             <td className="hidden lg:table-cell p-3 text-black bg-white">{manager.department}</td>
                             <td className="hidden lg:table-cell p-3 text-black bg-white">{manager.experience}</td>
                             <td className="hidden lg:table-cell p-3 text-black bg-white">
-                                <span className="px-2 py-1 rounded-full text-xs bg-go-green">
+                                <span className="px-2 py-1 rounded-full text-xs bg-go-green whitespace-nowrap">
                                     {manager.reports} team members
                                 </span>
                             </td>
